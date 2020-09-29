@@ -1,0 +1,32 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:f="sap.ui.layout.form" xmlns="sap.m"
+	controllerName="kill.zvaksss.controller.view1" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Add Sales Order">
+		<content>
+			<VBox class="sapUiSmallMargin">
+				<f:SimpleForm id="idSimple" editable="true" layout="ResponsiveGridLayout" title="Address" labelSpanXL="3" labelSpanL="3"
+					labelSpanM="3" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4" emptySpanM="4" emptySpanS="0" columnsXL="1"
+					columnsL="1" columnsM="1" singleContainerFullSize="false" >
+					<f:content>
+						<Label text="Vbeln"/>
+						<Input id="idVbeln" />
+						<Label text="Erdat"/>
+						<DatePicker id="idErdat" displayFormat="dd/mm/yyyy"/>
+						<Label text="Vbtyp"/>
+						<Input id="idVbtyp"/>
+						<Label text="Auart"/>
+						<Input id="idAuart"/>
+						<Label text="Netwr"/>
+						<Input id="idNetwr"/>
+						<Label text="Waerk"/>
+						<Input id="idWaerk"/>
+						<Label text="Vkorg"/>
+						<Input id="idVkorg"/>
+						<Label text="Kunnr"/>
+						<Input id="idKunnr"/>
+					</f:content>
+				</f:SimpleForm>
+			</VBox>
+		<Button text="Add Sales Order" icon="sap-icon://add" press="onAddSale"/>	
+		</content>
+	</Page>
+</mvc:View>
